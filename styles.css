@@ -1,0 +1,70 @@
+:root {
+    --color-primary: #7c3cb5; 
+    --color-bg: #121212; 
+    --color-card: #1b1720; 
+    --color-text: #bb9fdd; 
+    --color-accent: #a73cb5;
+    --color-success: #5ba989;
+    --color-fail: #b4544c;
+    --color-info: #21498a;
+    --radius: 12px;
+    --shadow: 0px 7px 29px 0px #a73cb54d;
+    --navbar-height: 80px;
+}
+
+body {
+    background-color: var(--color-bg) !important;
+}
+
+.navbar {
+    background-color: var(--color-bg);
+}
+
+.bi {
+    color: var(--color-accent);
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+    color: white;
+    text-shadow: 0 0 20px var(--color-accent);
+}
+
+.col-md-12 .card {
+    background-color: var(--color-card); 
+    box-shadow: var(--shadow) !important;
+
+}
+
+.card .card-title {
+    color: var(--color-text);
+}
+
+.card:hover {
+    transform: scale(1.005); 
+    transition: transform 0.5s ease 0s;
+}
+
+.btn-juego {
+    background-color: var(--color-accent);
+    color: var(--color-card);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    transition-duration: 0.1s;
+}
+
+.btn-juego:hover {
+    background-color: var(--color-card);
+    color: #ffffff;
+}
+
+.modal-header h5 {
+    color: var(--color-accent);
+}
