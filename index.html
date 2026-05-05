@@ -191,7 +191,14 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0 text-center bg-dark" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                    
+                    <div class="juegocontador">
+                        <label id="countLabel">0</label> <br>
+                        <div class="btn-group" id="btnContainer">
+                            <button type="button" class="btn btn-outline-light px-4" id="decreasebtn">-</button>
+                            <button type="button" class="btn btn-outline-light px-4" id="resetbtn">0</button>
+                            <button type="button" class="btn btn-outline-light px-4" id="increasebtn">+</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer border-0 bg-dark">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Salir del juego</button>
@@ -206,8 +213,12 @@
                     <h5 class="titulo_ingame">Adivina el Número</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0 text-center bg-dark" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                    
+                <div id="adivinaDiv" class="modal-body p-0 text-center bg-dark d-flex flex-column align-items-center justify-content-center" style="min-height: 400px;">
+                    <h5 class="text-light" id="test">Adivina el número entre 0 y 100</h5>
+                    <input type="number" id="numeroAdivinar" min="1" max="100">
+                    <button id="submitAdivinar" class="btn btn-outline-light px-4">Adivinar</button>
+                    <p id="replyAdivinar" class="text-light"></p>
+                    <p id="intentosAdivinar" class="text-light"></p>
                 </div>
                 <div class="modal-footer border-0 bg-dark">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Salir del juego</button>
@@ -222,8 +233,13 @@
                     <h5 class="titulo_ingame">Piedra, Papel o Tijera</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0 text-center bg-dark" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                <div class="modal-body p-4 text-center bg-dark d-flex flex-column align-items-center justify-content-center" style="min-height: 400px;">                    <h1 class="text-light" id="inputText">Tu jugada: </h1>
+                    <h1 class="text-light" id="computerText">Tu contrincante: </h1>
+                    <h1 class="text-light" id="resultText">Resultado: </h1>
 
+                    <button class="choiceBtn">Piedra</button>
+                    <button class="choiceBtn">Papel</button>
+                    <button class="choiceBtn">Tijeras</button>
                 </div>
                 <div class="modal-footer border-0 bg-dark">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Salir del juego</button>

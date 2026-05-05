@@ -68,3 +68,33 @@ body {
 .modal-header h5 {
     color: var(--color-accent);
 }
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a73cb5;
+}
+
+#numeroAdivinar {
+    height: 70px;
+    width: 180px;
+    font-size: 40px;
+    text-align: center;
+    color: var(--color-accent);
+    background-color: #121212;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+#numeroAdivinar::-webkit-outer-spin-button, 
+#numeroAdivinar::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#numeroAdivinar:focus {
+    outline: none;
+}
