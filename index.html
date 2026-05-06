@@ -40,11 +40,14 @@
                 <!-- contador -->
                 <div class="col-md-12 col-lg-4" id="contador">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/20/400/250" class="card-img-top rounded-top" alt="Contador">
+                        <!-- Reemplazo de imagen por ícono -->
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-123" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Contador</h4>
                             <p class="card-text text-light flex-grow-1">Suma y resta al contador con los botones.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontador">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalcontador" id="botoncontador">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -54,11 +57,14 @@
                 <!-- adivina el número -->
                 <div class="col-md-12 col-lg-4" id="adivina">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/111/400/250" class="card-img-top rounded-top" alt="Adivina">
+                        <!-- Reemplazo de imagen por ícono -->
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-patch-question" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Adivina el Número</h4>
                             <p class="card-text text-light flex-grow-1">Adivina el número aleatorio generado entre el 1 y 100.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalguess">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalguess" id="botonguess">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -68,11 +74,13 @@
                 <!-- piedra, papel o tijera -->
                 <div class="col-md-12 col-lg-4" id="piedrapapelotijera">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/112/400/250" class="card-img-top rounded-top" alt="Piedra Papel Tijera">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-scissors" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Piedra, Papel o Tijera</h4>
                             <p class="card-text text-light flex-grow-1">Piedra papel o tijeras vs computadora.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalppt">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalppt" id="botonppt">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -82,11 +90,13 @@
                 <!-- reacciona rápido -->
                 <div class="col-md-12 col-lg-4" id="reaccion">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/113/400/250" class="card-img-top rounded-top" alt="Reacciona">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-lightning-charge" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Reacciona Rápido</h4>
                             <p class="card-text text-light flex-grow-1">Haz clic lo más rápido posible cuando la pantalla cambie.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalreaccion">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalreaccion" id="botonreaccion">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -96,11 +106,13 @@
                 <!-- trivia -->
                 <div class="col-md-12 col-lg-4" id="trivia">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/114/400/250" class="card-img-top rounded-top" alt="Trivia">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-lightbulb" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Trivia</h4>
                             <p class="card-text text-light flex-grow-1">Preguntas variadas.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modaltrivia">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modaltrivia" id="botontrivia">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -110,11 +122,13 @@
                 <!-- reflejos -->
                 <div class="col-md-12 col-lg-4" id="reflejos">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/115/400/250" class="card-img-top rounded-top" alt="Reflejos">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-bullseye" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Juego de Reflejos</h4>
                             <p class="card-text text-light flex-grow-1">Nose</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalreflejos">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalreflejos" id="botonreflejos">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -124,11 +138,13 @@
                 <!-- preguntas rápidas -->
                 <div class="col-md-12 col-lg-4" id="preguntarapida">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/116/400/250" class="card-img-top rounded-top" alt="Preguntas Rápidas">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-stopwatch" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Preguntas Rápidas</h4>
                             <p class="card-text text-light flex-grow-1">Contesta correctamente antes de que el reloj llegue a cero.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalpreguntas">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalpreguntas" id="botonpreguntas">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -138,11 +154,13 @@
                 <!-- tictactoe -->
                 <div class="col-md-12 col-lg-4" id="tictactoe">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/117/400/250" class="card-img-top rounded-top" alt="Tic Tac Toe">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-grid-3x3" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Tic Tac Toe</h4>
                             <p class="card-text text-light flex-grow-1">Juego del gato.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modaltictactoe">
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modaltictactoe" id="botontictactoe">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -152,25 +170,29 @@
                 <!-- snake -->
                 <div class="col-md-12 col-lg-4" id="snake">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/118/400/250" class="card-img-top rounded-top" alt="Snake">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-controller" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Snake</h4>
-                            <p class="card-text text-light flex-grow-1">Controla a la serpiente, come y crece sin chocar contra los muros.</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalsnake">
+                            <p class="card-text text-light flex-grow-1">Controla a la serpiente, come y crece.</p>
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalsnake" id="botonsnake">
                                 Jugar Ahora
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!--whackamole-->
+                <!-- whackamole -->
                 <div class="col-md-12 col-lg-4" id="whackamole">
                     <div class="card h-100 border-0">
-                        <img src="https://picsum.photos/id/119/400/250" class="card-img-top rounded-top" alt="Whack-a-mole">
+                        <div class="card-img-top rounded-top d-flex align-items-center justify-content-center" style="height: 250px; background-color: rgba(0,0,0,0.2);">
+                            <i class="bi bi-hammer" style="font-size: 6rem; color: var(--color-accent);"></i>
+                        </div>
                         <div class="card-body d-flex flex-column text-center p-4">
                             <h4 class="card-title mb-3">Whack-a-mole</h4>
-                            <p class="card-text text-light flex-grow-1">Golpea a los topos antes de que vuelvan a esconderse</p>
-                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalwhack">
+                            <p class="card-text text-light flex-grow-1">Golpea a los topos antes de que vuelvan a esconderse.</p>
+                            <button class="btn-juego mt-auto" data-bs-toggle="modal" data-bs-target="#modalwhack" id="botonwhackamole">
                                 Jugar Ahora
                             </button>
                         </div>
@@ -233,7 +255,8 @@
                     <h5 class="titulo_ingame">Piedra, Papel o Tijera</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-4 text-center bg-dark d-flex flex-column align-items-center justify-content-center" style="min-height: 400px;">                    <h1 class="text-light" id="inputText">Tu jugada: </h1>
+                <div class="modal-body p-4 text-center bg-dark d-flex flex-column align-items-center justify-content-center" style="min-height: 400px;">
+                    <h1 class="text-light" id="inputText">Tu jugada: </h1>
                     <h1 class="text-light" id="computerText">Tu contrincante: </h1>
                     <h1 class="text-light" id="resultText">Resultado: </h1>
 
@@ -254,8 +277,10 @@
                     <h5 class="titulo_ingame">Reacciona Rápido</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0 text-center bg-dark" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-
+                <div class="modal-body p-4 text-center bg-dark d-flex flex-column align-items-center justify-content-center" style="min-height: 400px;">
+                    <p class="text-light">Haz click en las formas de la pantalla lo más rápido posible</p>
+                    <p id="tiempoReaccion" class="text-light"></p>
+                    <div id="forma"></div>
                 </div>
                 <div class="modal-footer border-0 bg-dark">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Salir del juego</button>
@@ -319,7 +344,20 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0 text-center bg-dark" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-
+                    <div id="tablerogato">
+                        <div class="cuadro" id="cuadro0"></div>
+                        <div class="cuadro" id="cuadro1"></div>
+                        <div class="cuadro" id="cuadro2"></div>
+                        <div class="cuadro" id="cuadro3"></div>
+                        <div class="cuadro" id="cuadro4"></div>
+                        <div class="cuadro" id="cuadro5"></div>
+                        <div class="cuadro" id="cuadro6"></div>
+                        <div class="cuadro" id="cuadro7"></div>
+                        <div class="cuadro" id="cuadro8"></div>
+                    </div>  
+                    <div id="endGame">
+                        <input type="button" value="Reiniciar" class="btn-juego" id="btnReiniciarGato"/>
+                    </div>
                 </div>
                 <div class="modal-footer border-0 bg-dark">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Salir del juego</button>
@@ -335,7 +373,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0 text-center bg-dark" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
-
+                    <canvas width="400" height="400" id="snakegame"></canvas>
                 </div>
                 <div class="modal-footer border-0 bg-dark">
                     <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Salir del juego</button>

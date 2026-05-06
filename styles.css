@@ -98,3 +98,44 @@ body {
 #numeroAdivinar:focus {
     outline: none;
 }
+
+#forma {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: none;
+    position: relative; 
+}
+
+#tablerogato {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.cuadro {
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--color-card);
+    background-color: var(--color-bg);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro:hover {
+    background-color: var(--color-primary);
+}
+
+
+
+#snakegame {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
