@@ -79,6 +79,20 @@ const botontictactoe = document.getElementById("botontictactoe");
 const botonsnake = document.getElementById("botonsnake");
 const botoncheems = document.getElementById("botonwhackamole");
 
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('navbarCollapse');
+    const botonToggle = document.querySelector('.navbar-toggler');
+
+    if (menu.classList.contains('show')) {
+        const clicEnOpcion = event.target.classList.contains('nav-link');
+        const clicAfuera = !menu.contains(event.target) && !botonToggle.contains(event.target);
+
+        if (clicEnOpcion || clicAfuera) {
+            botonToggle.click();
+        }
+    }
+});
+
 function contador() {
     const decreasebtn = document.getElementById("decreasebtn");
     const resetbtn = document.getElementById("resetbtn");
